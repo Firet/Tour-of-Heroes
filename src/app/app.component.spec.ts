@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content h1')?.textContent).toContain('Tour of Heroes');
+    expect(compiled.querySelector('.content h1')?.textContent).toContain('Tour of Heroes app is running!');
   });
 });

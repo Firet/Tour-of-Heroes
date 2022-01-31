@@ -1,0 +1,1 @@
+declare module "rxjs" // e.g declare module 'react-leaflet'
