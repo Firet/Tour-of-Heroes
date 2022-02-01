@@ -50,4 +50,12 @@ describe('AlertButtonComponent', () => {
     component.toggle();
     expect(component.hideContent).toBeFalsy();
   });
+
+  it('should toggle the message boolean asynchronously', fakeAsync(() => {
+    expect(component.hideContent).toBeTruthy();
+    component.toggleAsync();
+    tick(500);
+    expect(component.hideContent).toBeFalsy();
+  }));
+
 });
